@@ -84,7 +84,7 @@ Paul Benacerraf was a philosopher in the field of mathematics, best known for hi
  
 In "What Numbers Could Not Be", Benacerraf presents the problem of identification, challenging the idea that numbers are unique abstract objects. It points out that there are infinite ways of identifying natural numbers with sets, specifically, utilising the Zermelo (4)* set theory method in contrast with von Neumann's (5)*. For example: 
 Number 3 using Zermelo ordinals: 
-<img src="2.png" alt ="2" width ="300" height ="200">
+<img src="3.png" alt ="3" width ="300" height ="200">
 Number 3 using von Neumann ordinals: 
 <img src="1.png" alt ="1" width ="300" height ="200">
 According to Platonism, a number has to be identified with a specific set, which would render all other identifications incorrect. However, both of the number 3 definitions function equally well, and there are no laws to judge which is the correct one. Since this contradiction demonstrates we are unable to choose the true definition, Benacerraf concludes that numbers can be better understood as what they represent in relation to each other, instead of unique objects with intrinsic values.  
@@ -99,49 +99,19 @@ Field's solution to the given problem is nominalism, the philosophical view cont
  
 </pre>
 </p>
-  
-      <h3 id=”AnalysisandDiscussion”>Analysis and Discussion</h3>
-<p class="ex1">
-<pre>
-  Bridge deck repair durability is the subject of much recent research such as in <a href=”https://www.icevirtuallibrary.com/doi/full/10.1680/jbren.21.00034”>Toshihiko et al (2023).</a> Table 1: Data on cost and lifespan of bridge repairs
-</pre>
-</p>
-      <table>
-        <tr>
-          <th>£ Cost of repairs</th>
-          <th>Lifespan of repairs (years)</th>
-        </tr>
-        <tr>
-          <td>0.7 m</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>3.3 m</td>
-          <td>4</td>
-        </tr>
-        <tr>
-          <td>2.6 m</td>
-          <td>5</td>
-        </tr>
-        <tr>
-          <td>17.4 m</td>
-          <td>7</td>
-        </tr>
-        <tr>
-          <td>8.8 m</td>
-          <td>9</td>
-        </tr>
-      </table>
-   
+
       <h3 id="References">References</h3>
 <p class="ex1">
 <pre>
-Angluin, D (1988), Queries and concept learning. Machine learning 2, (4), 319-342.
-Brinker, K (2003), Incorporating Diversity in Active Learning with Support Vector Machines, Proceedings of the Twentieth International Conference on Machine Learning (ICML-2003).
-Bruzzone, L, Chi, M and Marconcini, M (2006), A novel transductive SVM for semisupervised classication of remote-sensing images, IEEE Transactions on Geoscience and Remote Sensing, 44, (11), 3363.
-Bruzzone, L and Persello, C (2009), Active learning for classification of remote sensing images.
-In: Geoscience and Remote Sensing Symposium, 2009 IEEE International, IGARSS 2009, 3.
-Campbell, C, Cristianini, N and Smola, A (2000), Query learning with large margin classifiers. In: Proc. 17th Internat. Conf. on Machine Learning. Morgan Kaufman, Stanford, CA, 111-118. 
+  (1) Stanford Encyclopedia of Philosophy (2023), Platonism in the Philosophy of Mathematics. Available at: https://plato.stanford.edu/entries/platonism-mathematics/ (Accessed: October 2025). 
+(2) Benacerraf, P. (1965), 'What Numbers Could Not Be', Philosophical Review, 74, pp. 47-73. 
+(3) Benacerraf, P. (1973), ‘Mathematical Truth’, The Journal of Philosophy, 70, pp. 661-680. 
+(4) Zermelo, E. (1967), van Heijenoort, Jean, ed., ‘Investigations in the Foundations of Set Theory I’, From Frege to Gödel: A Source Book in Mathematical Logic, 1879-1931. Translated by Bauer-Mengelberg, Stefan, Harvard University Press. 
+(5) von Neumann, J. (1967), van Heijenoort, Jean, ed., ‘On the Introduction of Transfinite Numbers’, From Frege to Gödel: A Source Book in Mathematical Logic, 1879-1931, Harvard University Press. 
+(6) Goldman, A.I. (1967), ‘A Causal Theory of Knowing’, The Journal of Philosophy, 64, pp. 357-372. 
+(7) Stanford Encyclopedia of Philosophy (2022), Philosophy of Mathematics, Available at: https://plato.stanford.edu/entries/philosophy-mathematics/#Int (Accessed: November 2025) 
+(8) Field, H. (1980), Science Without Numbers: A Defense of Nominalism (2nd edition), Oxford University Press.  
+(9) Newton, I. (1687), The Mathematical Principles of Natural Philosophy, Royal Society. 
 </pre>
 </p>
       
@@ -213,15 +183,15 @@ Campbell, C, Cristianini, N and Smola, A (2000), Query learning with large margi
   function displayTotalWordCount() 
   {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisandDiscussionCount = displayWordCount("AnalysisandDiscussion_InText");
+    const ArticleCount = displayWordCount("Article_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisandDiscussionCount;
+    const totalWordCount = ArticleCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
+<hr>
 </script>
 
 </html>
