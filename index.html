@@ -139,13 +139,13 @@ demonstrate it providing no knowledge of the physical world, suggesting it is on
       <h3 id="References"> References</h3>
 
 <p id= "(1)">
-  (1) Stanford Encyclopedia of Philosophy (2023), Platonism in the Philosophy of Mathematics. Available at: <a href = "https://plato.stanford.edu/entries/platonism-mathematics/">https://plato.stanford.edu/entries/platonism-mathematics/</a> (Accessed: October 2025).
+       (1) Stanford Encyclopedia of Philosophy (2023), Platonism in the Philosophy of Mathematics. Available at: <a href = "https://plato.stanford.edu/entries/platonism-mathematics/">https://plato.stanford.edu/entries/platonism-mathematics/</a> (Accessed: October 2025).
 </p>  
 <p id = "(2)">
-  (2) Benacerraf, P. (1965), 'What Numbers Could Not Be', Philosophical Review, 74, pp. 47-73. Available at: <a href = "https://www-jstor-org.surrey.idm.oclc.org/stable/2183530?sid=primo&seq=1">https://www-jstor-org.surrey.idm.oclc.org/stable/2183530?sid=primo&seq=1</a> (Accessed: October 2025).
+       (2) Benacerraf, P. (1965), 'What Numbers Could Not Be', Philosophical Review, 74, pp. 47-73. Available at: <a href = "https://www-jstor-org.surrey.idm.oclc.org/stable/2183530?sid=primo&seq=1">https://www-jstor-org.surrey.idm.oclc.org/stable/2183530?sid=primo&seq=1</a> (Accessed: October 2025).
 </p>
 <p id = "(3)">
-  (3) Benacerraf, P. (1973), ‘Mathematical Truth’, The Journal of Philosophy, 70, pp. 661-679. Available at: <a href = "https://www-jstor-org.surrey.idm.oclc.org/stable/2025075?sid=primo&seq=1">https://www-jstor-org.surrey.idm.oclc.org/stable/2025075?sid=primo&seq=1</a> (Accessed: October 2025)
+       (3) Benacerraf, P. (1973), ‘Mathematical Truth’, The Journal of Philosophy, 70, pp. 661-679. Available at: <a href = "https://www-jstor-org.surrey.idm.oclc.org/stable/2025075?sid=primo&seq=1">https://www-jstor-org.surrey.idm.oclc.org/stable/2025075?sid=primo&seq=1</a> (Accessed: October 2025)
 </p> 
 <p id = "(4)">
   (4) Zermelo, E. (1967), van Heijenoort, Jean, ed., ‘Investigations in the Foundations of Set Theory I’, From Frege to Gödel: A Source Book in Mathematical Logic, 1879-1931, Harvard University Press. Available at: <a href ="https://www.researchgate.net/publication/257165213_From_Frege_to_Godel_A_Source_Book_in_Mathematical_Logic_1879-1931">https://www.researchgate.net/publication/257165213_From_Frege_to_Godel_A_Source_Book_in_Mathematical_Logic_1879-1931</a> (Accessed: November 2025)
@@ -165,40 +165,8 @@ demonstrate it providing no knowledge of the physical world, suggesting it is on
 <p id = "(9)">
   (9) Newton, I. (1687), The Mathematical Principles of Natural Philosophy, Royal Society. 
 </p>
-
-</hr>
   
-<!total word count -->
-<p id="totalWordCount">
-<hr>
-<script>
-  // Function to calculate and display word count for a specified section
-  function displayWordCount(sectionId, outputId) 
-  {
-    // Get the text content from the specified section
-    const text = document.getElementById(sectionId).textContent;
-    // Split text into words based on spaces and filter out any empty strings
-    const wordArray = text.trim().split(/\s+/);
-    // Count the words
-    const wordCount = wordArray.length;
-    // Return the word count for summing purposes
-    return wordCount;
-  }
-  // Function to calculate and display total word count from selected sections
-  function displayTotalWordCount() 
-  {
-    // Calculate word count for each section and accumulate the total
-    const ArticleCount = displayWordCount("Article_InText");
-    // Calculate the sum of all selected sections
-    const totalWordCount = ArticleCount;
-    // Display the total word count
-    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
-  }
-  // Run the function for specific sections and display total count when the page loads
-  window.onload = displayTotalWordCount;
-</script>
 </hr>
-</p>
   
 <hr>
       <h3 id="Presentation"> Presentation</h3>
@@ -251,5 +219,36 @@ demonstrate it providing no knowledge of the physical world, suggesting it is on
     window.onload = getLastUpdatedTime;
 </script>
 
-
+<!total word count -->
+<p id="totalWordCount">
+<hr>
+<script>
+  // Function to calculate and display word count for a specified section
+  function displayWordCount(sectionId, outputId) 
+  {
+    // Get the text content from the specified section
+    const text = document.getElementById(sectionId).textContent;
+    // Split text into words based on spaces and filter out any empty strings
+    const wordArray = text.trim().split(/\s+/);
+    // Count the words
+    const wordCount = wordArray.length;
+    // Return the word count for summing purposes
+    return wordCount;
+  }
+  // Function to calculate and display total word count from selected sections
+  function displayTotalWordCount() 
+  {
+    // Calculate word count for each section and accumulate the total
+    const ArticleCount = displayWordCount("Article_InText");
+    // Calculate the sum of all selected sections
+    const totalWordCount = ArticleCount;
+    // Display the total word count
+    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+  }
+  // Run the function for specific sections and display total count when the page loads
+  window.onload = displayTotalWordCount;
+</script>
+</hr>
+</p>
+  
 </html>
