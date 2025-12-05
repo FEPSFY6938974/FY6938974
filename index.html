@@ -3,7 +3,7 @@
 <html>
 
   <head>
-    <img src="WebBanner.png" alt ="WebBanner" width ="device-width" height ="300">
+    <img src="WebBanner.png" style="width : 100%; height = auto;">
     <h1><b>ENG0018 Computer Laboratory 2025/26</b></h1>
     <h2>Student URN: 6938974</h2>
 
@@ -18,15 +18,17 @@
         table{
           font-family: arial, sans-serif;
           border-collapse: collapse;
-          width: 300px;
+          width: 400px;
         }
 
         td, th {
-          border: 3px solid cadetblue;
+          border: 2px solid cadetblue;
           text-align: left;
           padding: 15px;
         }
-
+        tr:nth-child(odd) {
+          background-colour:pink;
+        }
         tr:nth-child(even) {
           background-colour: cadetblue;
         }
